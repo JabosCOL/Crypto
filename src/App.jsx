@@ -63,6 +63,11 @@ function App() {
     }
   }, [monedas]);
 
+  useEffect(() => {
+    window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+  }, [resultado])
+
+
   return (
     <Contenedor>
       <Imagen src={ImagenCripto} alt="Imagenes criptomonedas" />
