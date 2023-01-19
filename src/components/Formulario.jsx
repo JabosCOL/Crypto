@@ -62,6 +62,9 @@ const Formulario = ({ setMonedas }) => {
       moneda,
       criptomoneda
     })
+    setTimeout(() => {
+      window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+  }, 250);
   };
 
   return (
